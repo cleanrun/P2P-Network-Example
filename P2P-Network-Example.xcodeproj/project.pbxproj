@@ -25,8 +25,9 @@
 		AB630A872AD96A9D00DCA11F /* PeerMessageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB630A862AD96A9D00DCA11F /* PeerMessageType.swift */; };
 		AB8AA97F2AD63A8700AE1F40 /* PeerMessageHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8AA97E2AD63A8700AE1F40 /* PeerMessageHeader.swift */; };
 		AB8AA9822AD66D1100AE1F40 /* NWParameters+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8AA9812AD66D1100AE1F40 /* NWParameters+Extension.swift */; };
-		AB8AA9842AD6BF6F00AE1F40 /* data-example.mov in Resources */ = {isa = PBXBuildFile; fileRef = AB8AA9832AD6BF6F00AE1F40 /* data-example.mov */; };
 		AB8AA9862AD6CB6800AE1F40 /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8AA9852AD6CB6800AE1F40 /* Data+Extension.swift */; };
+		ABF04A132ADFDCB6007701E8 /* data-example.mov in Resources */ = {isa = PBXBuildFile; fileRef = ABF04A122ADFDCB6007701E8 /* data-example.mov */; };
+		ABF04A142ADFDDDD007701E8 /* data-example.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = ABF04A112ADFDB49007701E8 /* data-example.MP4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,8 +51,9 @@
 		AB630A862AD96A9D00DCA11F /* PeerMessageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeerMessageType.swift; sourceTree = "<group>"; };
 		AB8AA97E2AD63A8700AE1F40 /* PeerMessageHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeerMessageHeader.swift; sourceTree = "<group>"; };
 		AB8AA9812AD66D1100AE1F40 /* NWParameters+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NWParameters+Extension.swift"; sourceTree = "<group>"; };
-		AB8AA9832AD6BF6F00AE1F40 /* data-example.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "data-example.mov"; sourceTree = "<group>"; };
 		AB8AA9852AD6CB6800AE1F40 /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
+		ABF04A112ADFDB49007701E8 /* data-example.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "data-example.MP4"; sourceTree = "<group>"; };
+		ABF04A122ADFDCB6007701E8 /* data-example.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "data-example.mov"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 		AB39BF9C2ACE7B2800BFE1C7 /* P2P-Network-Example */ = {
 			isa = PBXGroup;
 			children = (
+				ABF04A122ADFDCB6007701E8 /* data-example.mov */,
 				AB39BFB52ACE7CAE00BFE1C7 /* Utilities */,
 				AB39BFB42ACE7CA900BFE1C7 /* Models */,
 				AB39BFB22ACE7C9200BFE1C7 /* Life Cycle */,
@@ -92,7 +95,7 @@
 				AB39BFA62ACE7B2800BFE1C7 /* Assets.xcassets */,
 				AB39BFA82ACE7B2800BFE1C7 /* LaunchScreen.storyboard */,
 				AB39BFAB2ACE7B2800BFE1C7 /* Info.plist */,
-				AB8AA9832AD6BF6F00AE1F40 /* data-example.mov */,
+				ABF04A112ADFDB49007701E8 /* data-example.MP4 */,
 			);
 			path = "P2P-Network-Example";
 			sourceTree = "<group>";
@@ -215,10 +218,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB8AA9842AD6BF6F00AE1F40 /* data-example.mov in Resources */,
+				ABF04A142ADFDDDD007701E8 /* data-example.MP4 in Resources */,
 				AB39BFAA2ACE7B2800BFE1C7 /* LaunchScreen.storyboard in Resources */,
 				AB39BFA72ACE7B2800BFE1C7 /* Assets.xcassets in Resources */,
 				AB39BFA52ACE7B2800BFE1C7 /* Main.storyboard in Resources */,
+				ABF04A132ADFDCB6007701E8 /* data-example.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

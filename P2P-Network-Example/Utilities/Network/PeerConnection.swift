@@ -33,7 +33,6 @@ final class PeerConnection {
     private weak var delegate: PeerConnectionDelegate?
     private var interface: NWInterface?
     private let endpoint: NWEndpoint?
-    private let initiatedConnection: Bool
     private(set) var connection: NWConnection?
     private(set) var endpointName: String?
     
@@ -41,7 +40,6 @@ final class PeerConnection {
         self.delegate = delegate
         self.endpoint = endpoint
         self.interface = interface
-        self.initiatedConnection = true
         
         if case let NWEndpoint.service(name: name, type: _, domain: _, interface: _) = endpoint {
             self.endpointName = name
@@ -55,7 +53,6 @@ final class PeerConnection {
         self.delegate = delegate
         self.connection = connection
         self.endpoint = connection.endpoint
-        self.initiatedConnection = false
         
         if case let NWEndpoint.service(name: name, type: _, domain: _, interface: _) = connection.endpoint {
             self.endpointName = name

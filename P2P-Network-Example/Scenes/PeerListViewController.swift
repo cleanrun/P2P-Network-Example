@@ -61,11 +61,13 @@ class PeerListViewController: UIViewController {
     }
     
     private func sendVideo(using connection: PeerConnection) {
-        if let dataExampleURL = Bundle.main.url(forResource: "data-example", withExtension: "mov"), let dataExample = try? Data(contentsOf: dataExampleURL) {
-            autoreleasepool {
-                let chunkedData = dataExample.chunked()
-                chunkedData.forEach { data in
-                    connection.send(type: .videoData, data: data)
+        if let dataExampleURL = Bundle.main.url(forResource: "data-example", withExtension: "MP4") {
+            if let dataExample = try? Data(contentsOf: dataExampleURL) {
+                autoreleasepool {
+                    let chunkedData = dataExample.chunked()
+                    chunkedData.forEach { data in
+                        connection.send(type: .videoData, data: data)
+                    }
                 }
             }
         }
@@ -91,7 +93,7 @@ class PeerListViewController: UIViewController {
             connection.send(type: .message, data: "ExampleMessage".data(using: .utf8)!)
         }
         let sendVideoAction = UIAlertAction(title: "Send video", style: .default) { [unowned self] _ in
-            //self.sendVideo(using: connection)
+            self.sendVideo(using: connection)
         }
         let disconnectAction = UIAlertAction(title: "Disconnect", style: .destructive) { _ in
             connection.send(type: .disconnect, data: "Disconnect".data(using: .utf8)!)
